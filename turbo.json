@@ -10,6 +10,11 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
+    "test": {
+      "dependsOn": ["^test"],
+      "cache": false,
+      "inputs": ["$TURBO_DEFAULTS", ".env*"]
+    },
     "check-types": {
       "dependsOn": ["^check-types"]
     },
